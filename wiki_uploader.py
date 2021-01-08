@@ -17,7 +17,6 @@ portfolioCollection = client.get_collection_view(
 current_entries = [entry.__getattr__(
     'title') for entry in portfolioCollection.collection.get_rows()]
 
-open('file3.txt', 'w').close()  # Create the file
 # For every project
 for project in project_files:
     project_name = project[:-4]
