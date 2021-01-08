@@ -3,6 +3,8 @@ from re import L
 from notion.client import NotionClient
 from notion.block import TextBlock
 import os
+import wiki_maintainer
+wiki_maintainer.maintain()
 notebook_folder = '/home/willw/pop-os/home/willwalker/OneDrive/Notebooks/Notes/'
 project_wiki_folder = notebook_folder + 'Projects_Wiki'
 project_files = next(os.walk(project_wiki_folder))[2]
